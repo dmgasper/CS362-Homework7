@@ -13,6 +13,10 @@ class TestListAverage(unittest.TestCase):
 	def test_buzz(self):
 		result = fizzbuzz.getOutput(15)
 		self.assertEqual(result, "FizzBuzz")
+		
+	def test_buzz(self):
+		result = fizzbuzz.getOutput(16)
+		self.assertEqual(result, 16)
 
 		
 if __name__ == "__main__":
