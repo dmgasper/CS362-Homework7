@@ -11,5 +11,9 @@ class TestLeapYear(unittest.TestCase):
 		result = leapyear.isLeapYear(2019)
 		self.assertEqual(result, False)
 		
+	def test_invalidyear(self):
+		result = leapyear.isLeapYear("hello")
+		self.assertEqual(result, None)
+		
 if __name__ == "__main__":
 	unittest.main()
